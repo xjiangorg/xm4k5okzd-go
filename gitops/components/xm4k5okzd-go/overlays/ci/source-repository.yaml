@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: xm4k5okzd-go-repository
+spec:
+  url: https://github.com/xjiangorg/xm4k5okzd-go

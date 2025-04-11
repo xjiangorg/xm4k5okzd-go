@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: xm4k5okzd-go-gitops
+  description: This is GitOps manifest for xm4k5okzd-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=xm4k5okzd-go
+    backstage.io/kubernetes-id: xm4k5okzd-go 
+    backstage.io/techdocs-ref: dir:. 
+    jenkins.io/job-full-name: xm4k5okzd-go-gitops
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:xm4k5okzd-go
